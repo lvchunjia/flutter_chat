@@ -1,0 +1,52 @@
+name: chatgpt_flutter
+description: "A new chatGPT Flutter project."
+
+version: 1.0.0+1
+
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 组件化配置
+  login_sdk:
+    path: '../login_sdk'
+  hi_download:
+    path: '../hi_download'
+  zhonglvshiqi_chat_message:
+    path: '../zhonglvshiqi_chat_message'
+  openai_flutter:
+    path: '../openai_flutter'
+  flutter_zhonglvshiqi_cache:
+    path: ../flutter_zhonglvshiqi_cache
+  sqflite: ^2.3.2
+  sqflite_common_ffi: ^2.3.3
+  provider: ^6.1.2
+  url_launcher: ^6.2.5
+  http: ^1.2.1
+  cached_network_image: ^3.3.1
+  lottie: ^3.1.0
+  flutter_splash_screen: ^3.0.0
+  package_info_plus: ^6.0.0
+  open_filex: ^4.4.0
+
+#解决以来冲突
+#dependency_overrides:
+#  http: ^1.1.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/lottie/
